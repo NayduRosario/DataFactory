@@ -1,5 +1,5 @@
 {
-	"name": "pip_databricks",
+	"name": "pl_ingestabronce_file",
 	"properties": {
 		"activities": [
 			{
