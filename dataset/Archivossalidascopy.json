@@ -1,0 +1,33 @@
+{
+	"name": "Archivossalidascopy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LinkContenedorADLS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Archivos": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Archivos",
+					"type": "Expression"
+				},
+				"folderPath": "proyectofinal/capabronce",
+				"fileSystem": "naydutorres"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

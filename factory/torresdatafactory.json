@@ -1,0 +1,9 @@
+{
+	"name": "torresdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8d9573e8-8ee9-48a6-af5e-7dee9c4d8250",
+		"tenantId": "8700b78f-8d90-4cbb-a48d-d0e559fee748"
+	}
+}
